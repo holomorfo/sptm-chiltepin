@@ -1,2 +1,3 @@
 # sptm-chiltepin
-Browser audio live coding library
+
+Browser live coding library

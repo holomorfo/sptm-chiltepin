@@ -1,10 +1,10 @@
-const checks = require('../conditionsCheck')
+import checks from '../conditionsCheck'
 
 describe('Check midi match', () => {
   it('should call midi handler if passed number in range [0,127]', () => {
     const handlerMIDI = jest.fn()
     const handlerFreq = jest.fn()
-    checks.midiMatch('60', handlerMIDI)
+    checks.midiMatch('60', handlerMIDI,undefined)
     expect(handlerMIDI).toHaveBeenCalledWith('60')
     expect(handlerFreq).not.toHaveBeenCalled()
   })
